@@ -1,6 +1,6 @@
 # IMPORTANT!!!
 ## Start new Project:
-After cloning the sample project you should first change the project name. This can be acieved by editing the "CMakeLists.txt" and changing the first argument in the project() call.
+After cloning the sample project, you should first change the project name. This can be achieved by editing the "CMakeLists.txt" and changing the first argument in the project() call.
 
 Example:
 
