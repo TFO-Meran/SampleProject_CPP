@@ -1,8 +1,12 @@
 /******************************************************************************
- *   $FILE:  main.cpp
- *   Brief:  sample code with simple "pass by reference"-funcion
+ *   
+ *   @file:  main.cpp
+ *   @brief:  sample code with simple "pass by reference"-funcion
+ *   @author: CG
  *   Website:  https://...
  *   Support email:  ...
+ *   @todo: ..test todo.. 
+ *     
  ******************************************************************************/
 /*  License:
  */
@@ -29,6 +33,7 @@ int main(int, char **)
 
     int a;
     int b;
+
 
     cout << "Switch variables!\n";
     cout << "Enter a value a:\n";

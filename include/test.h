@@ -1,8 +1,10 @@
 /******************************************************************************
- *   $FILE:  test.h
- *   Brief:  sample header file
+ * 
+ *   @file:  test.h
+ *   @brief:  test header file
  *   Website:  https://...
  *   Support email:  ...
+ * 
  ******************************************************************************/
 /*  License:
  */
@@ -25,7 +27,12 @@
 //                            Functions
 // ============================================================================
 
-void switchval(int &, int &);
+/*
+    @brief: ..just a test function that switches two values..
+    @param: a = an integer value
+    @param: b = an integer value
+*/
+void switchval(int &a, int &b);
 
 // ============================================================================
 //                           END OF FILE
