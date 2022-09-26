@@ -3,14 +3,14 @@
 
 
 
-This Repo was created specifically for **TFO-MERAN(O)** - a highscool in South-Tyrol, Italy. It is a **work-in-progress for teaching purposeses** and has no ambitions for completeness or absolute perfection.
+This Repo was created specifically for **TFO-MERAN(O)** - a high school in South-Tyrol, Italy. It is a **work-in-progress for teaching purposes** and has no ambitions for completeness or absolute perfection.
 However, everyone is encouraged to use it and to make proposals for improvements.
 
 Happy programming!
 
 
-## PREREQUISITS
-You need have a working installation of VSCode an the following extensions:
+## PREREQUISITES
+You need have a working installation of VSCode and the following extensions:
 1.  C/C++ from Microsoft
 2.  C/C++ Extension Pack from Microsoft
 3.  CMake Tools from Microsoft
