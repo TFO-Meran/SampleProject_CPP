@@ -15,7 +15,11 @@ You need have a working installation of VSCode and the following extensions:
 2.  C/C++ Extension Pack from Microsoft
 3.  CMake Tools from Microsoft
 
-Also, you need to have MinGW installed and accessible through the PATH-variable.
+Also, you need to have 
+- [MinGW](https://www.mingw-w64.org/downloads/) 
+- [CMake](https://cmake.org/download/) 
+
+installed and accessible through the PATH-variable.
 
 You should also have a working GIT-environment.
 
