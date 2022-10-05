@@ -1,15 +1,12 @@
 /******************************************************************************
- *   
- *   @file:  main.cpp
- *   @brief:  sample code with simple "pass by reference"-funcion
- *   @author: CG
- *   Website:  https://...
- *   Support email:  ...
- *   @todo: ..test todo.. 
- *     
+ *  @file:      main.cpp
+ *  @brief:     sample code with simple "pass by reference"-funcion
+ *  @author:    CG
+ *  Website:    https://...
+ *  Support:    ... 
+ *  @todo:      ..test todo..      
  ******************************************************************************/
-/*  License:
- */
+/*  License:    ...        */
 
 // ****************************************************************************
 // ****************************************************************************

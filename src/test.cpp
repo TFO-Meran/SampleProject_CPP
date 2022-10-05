@@ -1,11 +1,10 @@
 /******************************************************************************
- *   $FILE:  test.cpp
- *   Brief:  sample code with simple "pass by reference"-funcion
- *   Website:  https://...
- *   Support email:  ...
+ *  @file       test.cpp
+ *  @brief      sample code with simple "pass by reference"-funcion
+ *  Website     https://...
+ *  Support     ...
  ******************************************************************************/
-/*  License:
- */
+/*  License: ...   */
 
 // ****************************************************************************
 // ****************************************************************************
