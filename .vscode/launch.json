@@ -9,7 +9,7 @@
             "name": "(gdb) Starten",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/${fileExtname}",
+            "program": "${workspaceFolder}/build/${workspaceFolderBasename}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

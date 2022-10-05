@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 
 
-project(SampleProject VERSION 0.1.0)
+project(testprogramm VERSION 0.1.0)
 
 
 include(CTest)
