@@ -11,6 +11,7 @@ enable_testing()
 file(GLOB_RECURSE PROJECT_SRC 
     ${PROJECT_SOURCE_DIR}/src/*.cpp 
     ${PROJECT_SOURCE_DIR}/src/*.c 
+    ${PROJECT_SOURCE_DIR}/src/*.h 
     ${PROJECT_SOURCE_DIR}/include/*.h
     ${PROJECT_SOURCE_DIR}/include/*.c
     ${PROJECT_SOURCE_DIR}/include/*.cpp)
