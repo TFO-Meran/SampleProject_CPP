@@ -1,15 +1,16 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe Aktive Datei kompilieren",
+            "label": "build",
             "command": "g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/*.cpp",
+                "${workspaceFolder}\\src\\*.cpp",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\build\\myProgram.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -22,7 +23,20 @@
                 "isDefault": true
             },
             "detail": "Vom Debugger generierte Aufgabe."
+        },
+        {
+            "label": "cmakebuild",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

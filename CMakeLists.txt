@@ -1,8 +1,6 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.10)
 
-
-project(SampleProject VERSION 0.1.0)
-
+project(myProgram VERSION 1.0)
 
 include(CTest)
 
@@ -22,7 +20,9 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${PROJECT_SOURCE_DIR}/src/ 
     ${PROJECT_SOURCE_DIR}/include/)
 
-
+include(CPack)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")

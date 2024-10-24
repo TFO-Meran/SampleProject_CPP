@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [        
         {
-            "name": "(gdb) Starten",
+            "name": "(gdb) Compile and Debug",
             "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/${fileExtname}",
+            "request": "launch",            
+            "program": "${workspaceFolder}\\build\\myProgram.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -27,7 +27,8 @@
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "preLaunchTask": "cmakebuild"
         }
     ]
 }
