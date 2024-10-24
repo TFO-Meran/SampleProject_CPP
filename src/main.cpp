@@ -1,7 +1,7 @@
 /******************************************************************************
  *  @file:      main.cpp
- *  @brief:     sample code with simple "pass by reference"-funcion
- *  @author:    CG
+ *  @brief:     sample code for "Hello World!" in C++
+ *  @author:    ...
  *  Website:    https://...
  *  Support:    ... 
  *  @todo:      ..test todo..      
