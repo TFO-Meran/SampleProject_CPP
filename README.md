@@ -1,34 +1,33 @@
 # SampleProject_CPP
-..a sample project structure for cpp programming with VSCode, CMake and MinGW, suitable for Linux, Windows and Mac platforms.
 
+A sample project structure for C++ programming with VSCode, CMake, and MinGW, suitable for Linux, Windows, and Mac platforms.
 
-
-This Repo was created specifically for **TFO-MERAN(O)** - a high school in South-Tyrol, Italy. It is a **work-in-progress for teaching purposes** and has no ambitions for completeness or absolute perfection.
-However, everyone is encouraged to use it and to make proposals for improvements.
+This repository was created specifically for **TFO-MERAN(O)**, a high school in South Tyrol, Italy. It is a **work-in-progress for educational purposes** and does not aim for completeness or absolute perfection. However, contributions and suggestions for improvements are welcome.
 
 Happy programming!
 
+## Prerequisites
 
-## PREREQUISITES
-You need have a working installation of VSCode and the following extensions:
-1.  C/C++ from Microsoft
-2.  C/C++ Extension Pack from Microsoft
-3.  CMake Tools from Microsoft
+To use this project, ensure you have the following installed and properly configured:
 
-Also, you need to have 
-- [MinGW](https://www.mingw-w64.org/downloads/) 
-- [CMake](https://cmake.org/download/) 
+1. **VSCode** with the following extensions:
+   - C/C++ by Microsoft
+   - C/C++ Extension Pack by Microsoft
+   - CMake Tools by Microsoft
 
-installed and accessible through the PATH-variable.
+2. **MinGW** - [Download MinGW](https://www.mingw-w64.org/downloads/)
+3. **CMake** - [Download CMake](https://cmake.org/download/)
+4. A working **Git** environment
 
-You should also have a working GIT-environment.
+Ensure that MinGW and CMake are accessible through the PATH variable.
 
-## GETTING STARTED
-### Start new Project:
-After cloning the sample project, you should first change the project name. This can be achieved by editing the "CMakeLists.txt" and changing the first argument in the project() call.
+## Getting Started
+
+### Starting a New Project
+
+After cloning the sample project, you should rename the project by editing the `CMakeLists.txt` file and changing the first argument in the `project()` call.
 
 Example:
 
-`project(MyProgram VERSION 0.1.0)` -> "MyProgram" becomes the Project Name
-
-After this, you should call the ">CMake: Delete Cache and Reconfigure" function by pressing F1 or Ctrl+Shift+P and selecting the corresponding entry.
+```cmake
+project(MyProgram VERSION 1.0)
