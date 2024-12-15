@@ -2,33 +2,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "cppbuild",
             "label": "build",
-            "command": "g++.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${workspaceFolder}\\src\\*.cpp",
-                "-o",
-                "${workspaceFolder}\\build\\myProgram.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Vom Debugger generierte Aufgabe."
-        },
-        {
-            "label": "cmakebuild",
             "type": "shell",
-            "command": "cmake",
+            "command": "${command:cmake.build}",
             "args": [
+                "-DCMAKE_BUILD_TYPE=Debug",
                 "--build",
                 "${workspaceFolder}/build"
             ],
@@ -36,7 +14,8 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": ["$gcc"]
+            "problemMatcher": ["$gcc"],
+            "detail": "Erstellt das Projekt"
         }
     ]
 }

@@ -1,34 +1,37 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [        
+    "configurations": [
         {
-            "name": "(gdb) Compile and Debug",
+            "name": "C++ Launch",
             "type": "cppdbg",
-            "request": "launch",            
-            "program": "${workspaceFolder}\\build\\myProgram.exe",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/myprogramm",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "",
+            "MIMode": "gdb",  // Standardmäßig für Linux
             "setupCommands": [
                 {
-                    "description": "Automatische Strukturierung und Einrückung für \"gdb\" aktivieren",
+                    "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Disassemblierungsvariante auf Intel festlegen",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
+                    "ignoreFailures": false
                 }
             ],
-            "preLaunchTask": "cmakebuild"
+            "miDebuggerPath": "/usr/bin/gdb",  // Standard gdb-Pfad für Linux
+            "preLaunchTask": "build",
+            "logging": {
+                "engineLogging": false
+            },
+            "windows": {
+                "MIMode": "gdb",  // Debugging auch unter Windows möglich
+                "miDebuggerPath": "C:/MinGW/bin/gdb.exe"  // gdb für Windows
+            },
+            "linux": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb"  // gdb unter Linux
+            }
         }
     ]
 }

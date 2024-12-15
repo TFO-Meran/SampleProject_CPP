@@ -6,6 +6,12 @@ include(CTest)
 
 enable_testing()
 
+if(UNIX)
+    set(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
+    set(CMAKE_CXX_FLAGS "-Wall -Wextra -std=c++17")
+    set(CMAKE_EXE_LINKER_FLAGS "")
+endif()
+
 file(GLOB_RECURSE PROJECT_SRC 
     ${PROJECT_SOURCE_DIR}/src/*.cpp 
     ${PROJECT_SOURCE_DIR}/src/*.c 
