@@ -25,9 +25,10 @@ using namespace std;
 //=============================================================================
 int main(int, char **)
 {
-    int a = 5;
-    cout << "Hello World!!!!!!\n";
-    cout << a << endl;
+    int a =5;
+    // print "Hello World!" to the console
+    cout << "Hello World!!!\n";
+    cout << "a = " << a << endl;
     return 0;
 }
 
