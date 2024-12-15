@@ -1,7 +1,16 @@
 {
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    "cmake.generator": "MinGW Makefiles",
-    "files.associations": {
-        "iostream": "cpp"
+    "cmake.generator": "Unix Makefiles",  // Standardmäßig für Linux
+    "C_Cpp.default.compilerPath": "${config:platformCompilerPath}",  // Platform-abhängiger Compiler-Pfad
+    "C_Cpp.default.intelliSenseEngine": "Default",
+    "C_Cpp.default.includePath": [
+        "/usr/include/c++/9",  // Beispiel für Linux (kann angepasst werden)
+        "/usr/include"
+    ],
+    "C_Cpp.default.defines": [
+        "NDEBUG"
+    ],
+    "platformCompilerPath": {
+        "linux": "/usr/bin/g++",  // Linux-Pfad
+        "windows": "C:/MinGW/bin/g++.exe"  // Windows-Pfad für MinGW
     }
 }

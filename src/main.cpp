@@ -25,7 +25,9 @@ using namespace std;
 //=============================================================================
 int main(int, char **)
 {
-    cout << "Hello World!\n";
+    int a = 5;
+    cout << "Hello World!!!!!!\n";
+    cout << a << endl;
     return 0;
 }
 
