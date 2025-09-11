@@ -24,5 +24,20 @@ include(CPack)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 
-set(CMAKE_C_COMPILER "gcc")
-set(CMAKE_CXX_COMPILER "g++")
+if(WIN32)
+    message(STATUS "Configuring for Windows")
+    # Windows-spezifische Einstellungen
+    set(CMAKE_C_COMPILER "gcc")
+    set(CMAKE_CXX_COMPILER "g++")
+elseif(APPLE)
+    message(STATUS "Configuring for macOS")
+    # macOS-spezifische Einstellungen
+    set(CMAKE_C_COMPILER "/usr/bin/clang")
+    set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+elseif(UNIX)
+    message(STATUS "Configuring for Linux/Unix")
+    # Linux-spezifische Einstellungen
+else()
+    message(FATAL_ERROR "Unbekannte Plattform")
+endif()
+
