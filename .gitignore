@@ -34,3 +34,4 @@
 # TFO-Excludes
 /build/*
 .vscode
+.cache
