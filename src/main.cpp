@@ -26,7 +26,7 @@ using namespace std;
 int main(int, char **)
 {
     // Das ist ein Hallo Welt Beispiel..
-    cout << "Hallo Welt!\n";
+    cout << "Hello World!\n";
     return 0;
 }
 
